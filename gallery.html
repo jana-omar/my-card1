@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معرض الصور — Araola Café</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* تنسيق خاص بصفحة المعرض (صفحة مساعدة) */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+    .gallery-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+    }
+    .gallery-card img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+    }
+    .gallery-card .usage {
+      color: var(--primary);
+      font-weight: 700;
+      margin-top: 10px;
+    }
+    .gallery-card .fname {
+      direction: ltr;
+      text-align: left;
+      font-size: .78rem;
+      color: var(--secondary);
+      word-break: break-all;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/the-logo.png" alt="Araola Café">
+      </a>
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <a href="index.html">الرئيسية</a>
+        <a href="menu.html" class="active">القائمة</a>
+        <a href="contact.html">تواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="page-head">
+      <p class="eyebrow">Gallery</p>
+      <h1>معرض الصور</h1>
+      <p>كل صورة مع الصنف المخصص لها — الأسماء مطابقة لأسماء الصور.</p>
+    </div>
+
+    <div class="gallery">
+
+      <div class="gallery-card">
+        <img src="images/the-logo.png" alt="">
+        <p class="usage">شعار Araola — الترويسة والرئيسية</p>
+        <p class="fname">the-logo.png</p>
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/espresso.jpeg" alt="">
+        <p class="usage">Espresso — المشروبات الساخنة (12 ر.س)</p>
+        <p class="fname">espresso.jpeg</p>
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/hot-chocolate.jpeg" alt="">
+        <p class="usage">Hot Chocolate — المشروبات الساخنة (16 ر.س)</p>
+        <p class="fname">hot-chocolate.jpeg</p>
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/saudi-coffee.jpeg" alt="">
+        <p class="usage">Saudi Coffee — المشروبات الساخنة (10 ر.س)</p>
+        <p class="fname">saudi-coffee.jpeg</p>
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/v60.jpeg" alt="">
+        <p class="usage">V60 — المشروبات الباردة (20 ر.س)</p>
+        <p class="fname">v60.jpeg</p>
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/ice-latte.jpeg" alt="">
+        <p class="usage">Ice Latte — المشروبات الباردة (18 ر.س)</p>
+        <p class="fname">ice-latte.jpeg</p>
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/ice-matcha-latte.jpeg" alt="">
+        <p class="usage">Ice Matcha Latte — المشروبات الباردة (19 ر.س)</p>
+        <p class="fname">ice-matcha-latte.jpeg</p>
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/san-sebastian.jpeg" alt="">
+        <p class="usage">San Sebastian — الحلويات (28 ر.س)</p>
+        <p class="fname">san-sebastian.jpeg</p>
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/lemon-cake.jpeg" alt="">
+        <p class="usage">Lemon Cake — الحلويات (27 ر.س)</p>
+        <p class="fname">lemon-cake.jpeg</p>
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/honey-cake.jpeg" alt="">
+        <p class="usage">Honey Cake — الحلويات (27 ر.س)</p>
+        <p class="fname">honey-cake.jpeg</p>
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/cookies.jpeg" alt="">
+        <p class="usage">Cookies — المخبوزات (12 ر.س)</p>
+        <p class="fname">cookies.jpeg</p>
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/pudding-chocolate.jpeg" alt="">
+        <p class="usage">Pudding Chocolate — المخبوزات (18 ر.س)</p>
+        <p class="fname">pudding-chocolate.jpeg</p>
+      </div>
+
+      <div class="gallery-card">
+        <img src="images/french-toast.jpeg" alt="">
+        <p class="usage">French Toast — المخبوزات (25 ر.س)</p>
+        <p class="fname">french-toast.jpeg</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <img class="footer-logo" src="images/the-logo.png" alt="Araola Café">
+      <nav class="footer-nav" aria-label="التنقل في التذييل">
+        <a href="index.html">الرئيسية</a>
+        <a href="menu.html">القائمة</a>
+        <a href="contact.html">تواصل</a>
+      </nav>
+      <p class="copyright">© 2026 Araola Café — جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+</body>
+</html>
